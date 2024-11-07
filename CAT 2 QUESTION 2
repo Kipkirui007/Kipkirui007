@@ -1,0 +1,29 @@
+A 2D array scores is defined with dimensions 2x2, which means it has 2 rows and 2 columns.
+The array is initialized with the values:
+First row: {95, 88}
+Second row: {76, 89
+#include <stdio.h>
+
+int main() {
+     i. Define a 2D array data structure
+     ii. Declare and initialize a 2D array named scores with 2 rows and 2 columns
+    int scores[2][2] = {
+        {95, 88},  First row
+        {76, 89}   Second row
+    };
+
+     Print the elements of the scores array using a nested for loop
+    printf("Elements of the scores array:\n");
+    for (int i = 0; i < 2; i++) {    Outer loop to go through rows
+        for (int j = 0; j < 2; j++) {    Inner loop to go through columns
+            printf("scores[%d][%d] = %d\n", i, j, scores[i][j]);
+        }
+    }
+
+    return 0;
+}
+Elements of the scores array:
+scores[0][0] = 95
+scores[0][1] = 88
+scores[1][0] = 76
+scores[1][1] = 89
